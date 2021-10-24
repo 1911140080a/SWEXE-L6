@@ -1,0 +1,11 @@
+<%= @products.each do |product| %>
+
+<p>
+   <%= link_to prodact.name%> 
+   <%= link_to '削除', "/products/#{product.id}", method: :delete %>
+   <%= link_to '編集', "/products/#{product.id}/create" %>
+</p>
+
+<% end %>
+
+<p><%= link_to '商品を新規登録する' %></p>

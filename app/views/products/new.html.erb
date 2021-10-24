@@ -1,0 +1,7 @@
+<%= form_for @tweet, massage: {action: :create} do |f| %>
+
+<%= f.label :massage, 'いまなにしてる？' %>
+<%= f.text_field :massage %>
+<%= f.submit '投稿' %>
+
+<% end %>
